@@ -1,0 +1,253 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{3}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ab3c607a5ddbade7706ded6902cfcbeb}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={Ashok\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=68f523934985e2f967ab2b15f4ded07c}{%
+           family={Raghavan},
+           familyi={R\bibinitperiod},
+           given={Prabhakar},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0399466e2f0ef75a67fe2fcacc604103}{%
+           family={Ruzzo},
+           familyi={R\bibinitperiod},
+           given={Walter\bibnamedelima L.},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=835cb1164a45fcf2a7b7a7d37c148a02}{%
+           family={Smolensky},
+           familyi={S\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=27a875f9b2f790351709587a0b3be22d}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Prasoon},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d97d62316a22d8af815f242a0ec6006}
+      \strng{fullhash}{721175d5328818de7a5bd96cd1752a24}
+      \strng{bibnamehash}{7d97d62316a22d8af815f242a0ec6006}
+      \strng{authorbibnamehash}{7d97d62316a22d8af815f242a0ec6006}
+      \strng{authornamehash}{7d97d62316a22d8af815f242a0ec6006}
+      \strng{authorfullhash}{721175d5328818de7a5bd96cd1752a24}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 21st ACM Symposium on Theory of Computing}
+      \field{title}{The Electrical Resistance of a Graph Captures its Commute and Cover Times}
+      \field{year}{1989}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/220268346_The_Electrical_Resistance_of_a_Graph_Captures_its_Commute_and_Cover_Times_Detailed_Abstract
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/220268346_The_Electrical_Resistance_of_a_Graph_Captures_its_Commute_and_Cover_Times_Detailed_Abstract
+      \endverb
+    \endentry
+    \entry{8}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4cbfcd436aad61ff88fd10aa44eef0ab}{%
+           family={Chartrand},
+           familyi={C\bibinitperiod},
+           given={Gary},
+           giveni={G\bibinitperiod}}}%
+        {{hash=28b6504d56c03d7d44c0ecca06ae0869}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dover Publications}%
+      }
+      \strng{namehash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \strng{fullhash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \strng{bibnamehash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \strng{authorbibnamehash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \strng{authornamehash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \strng{authorfullhash}{13f731aa6aef762ecb9b627eb3b9b64f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A First Course in Graph Theory}
+      \field{year}{2005}
+      \verb{urlraw}
+      \verb http://lib.ysu.am/disciplines_bk/86ed8ab971105564c1b66357510f992a.pdf
+      \endverb
+      \verb{url}
+      \verb http://lib.ysu.am/disciplines_bk/86ed8ab971105564c1b66357510f992a.pdf
+      \endverb
+    \endentry
+    \entry{6}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d7750765c1eb004bdcdce07ed2272ba7}{%
+           family={Diestel},
+           familyi={D\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag New York}%
+      }
+      \strng{namehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{fullhash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{bibnamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authorbibnamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authornamehash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \strng{authorfullhash}{d7750765c1eb004bdcdce07ed2272ba7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Electronic Edition 2000}
+      \field{title}{Graph Theory}
+      \field{volume}{173}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://www.emis.de/monographs/Diestel/en/GraphTheoryII.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.emis.de/monographs/Diestel/en/GraphTheoryII.pdf
+      \endverb
+    \endentry
+    \entry{2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6d9e6add9ed875ee3dabf19bf77f55e6}{%
+           family={Estrada},
+           familyi={E\bibinitperiod},
+           given={Ernesto},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \strng{fullhash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \strng{bibnamehash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \strng{authorbibnamehash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \strng{authornamehash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \strng{authorfullhash}{6d9e6add9ed875ee3dabf19bf77f55e6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New Journal of Physics}
+      \field{title}{Path Laplacians versus fractional Laplacians as nonlocal operators on networks}
+      \field{volume}{23}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/353256249_Path_Laplacians_versus_fractional_Laplacians_as_nonlocal_operators_on_networks
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/353256249_Path_Laplacians_versus_fractional_Laplacians_as_nonlocal_operators_on_networks
+      \endverb
+    \endentry
+    \entry{4}{article}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Kirchhoff's Rules}
+      \verb{urlraw}
+      \verb https://www.theexpertta.com/book-files/OpenStaxUniversityPhysicsVol2/UP2_10.3.%20Kirchhoff_s%20Rules_pg453-465.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.theexpertta.com/book-files/OpenStaxUniversityPhysicsVol2/UP2_10.3.%20Kirchhoff_s%20Rules_pg453-465.pdf
+      \endverb
+    \endentry
+    \entry{5}{article}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{Resistance and Ohms Law}
+      \verb{urlraw}
+      \verb https://www.salfordphysics.com/gsmcdonald/E_02_Lecture02.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.salfordphysics.com/gsmcdonald/E_02_Lecture02.pdf
+      \endverb
+    \endentry
+    \entry{1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=80a5f7e7145911c85bada45cfd9e7161}{%
+           family={Sinclair},
+           familyi={S\bibinitperiod},
+           given={Alistair},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{80a5f7e7145911c85bada45cfd9e7161}
+      \strng{fullhash}{80a5f7e7145911c85bada45cfd9e7161}
+      \strng{bibnamehash}{80a5f7e7145911c85bada45cfd9e7161}
+      \strng{authorbibnamehash}{80a5f7e7145911c85bada45cfd9e7161}
+      \strng{authornamehash}{80a5f7e7145911c85bada45cfd9e7161}
+      \strng{authorfullhash}{80a5f7e7145911c85bada45cfd9e7161}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{CS271 Randomness \& Computation}
+      \field{note}{Lecture 24: November 15, University of California, Berkeley}
+      \field{title}{Random Walks}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://people.eecs.berkeley.edu/~sinclair/cs271/n24.pdf
+      \endverb
+      \verb{url}
+      \verb https://people.eecs.berkeley.edu/~sinclair/cs271/n24.pdf
+      \endverb
+    \endentry
+    \entry{7}{article}{}
+      \name{author}{1}{}{%
+        {{hash=36368d1b37feb390fd4287c0bd38aa66}{%
+           family={West},
+           familyi={W\bibinitperiod},
+           given={Douglas\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{36368d1b37feb390fd4287c0bd38aa66}
+      \strng{fullhash}{36368d1b37feb390fd4287c0bd38aa66}
+      \strng{bibnamehash}{36368d1b37feb390fd4287c0bd38aa66}
+      \strng{authorbibnamehash}{36368d1b37feb390fd4287c0bd38aa66}
+      \strng{authornamehash}{36368d1b37feb390fd4287c0bd38aa66}
+      \strng{authorfullhash}{36368d1b37feb390fd4287c0bd38aa66}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second Edition}
+      \field{title}{Introduction to Graph Theory}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb https://athena.nitc.ac.in/summerschool/Files/West.pdf
+      \endverb
+      \verb{url}
+      \verb https://athena.nitc.ac.in/summerschool/Files/West.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
