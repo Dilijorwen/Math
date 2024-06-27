@@ -1,0 +1,477 @@
+\documentclass{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} 
+\usepackage[english,russian]{babel} 
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{amsfonts}
+\usepackage{titlesec}
+\usepackage{titling} 
+\usepackage{geometry}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\arabic{section}}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{}{1em}{}
+
+
+\setlength{\droptitle}{-3em} 
+\title{\vspace{-1cm}ИДЗ №1}
+\author{Пелагеев Даниил Иванович}
+\date{Группа: Б9122-01.03.02мкт}
+
+\geometry{a4paper, margin=2cm}
+
+\begin{document}
+	
+	\maketitle
+
+
+
+\section{Найти все значения корня: $\sqrt[3]{\frac{i}{27}}$}
+\subsection{Решение:}
+
+\[
+\sqrt[3]{\frac{i}{27}} = \frac{1}{3} \sqrt[3]{i}
+\]
+\[
+z = \sqrt[n]{|z|} \left( \cos \frac{\varphi + 2k\pi}{n} + i \sin \frac{\varphi + 2k\pi}{n} \right)
+\]
+
+\[
+z_1 = \cos \frac{\pi}{6} + i \sin \frac{\pi}{6} = \frac{\sqrt{3}}{2} + \frac{1}{2}i
+\]
+
+\[
+z_2 = \cos \frac{5\pi}{6} + i \sin \frac{5\pi}{6} = -\frac{\sqrt{3}}{2} + \frac{1}{2}i
+\]
+
+\[
+z_3 = \cos \frac{3\pi}{2} + i \sin \frac{3\pi}{2} = -i
+\]
+
+Ответ: $\frac{\sqrt{3}}{6} + \frac{1}{6}i, \quad -\frac{\sqrt{3}}{6} + \frac{1}{6}i, \quad -\frac{1}{3}i$
+
+\section{Представить в алгебраической форме: $\sin \left( \frac{\pi}{2} - 5i \right)$}
+\subsection{Решение:}
+
+\[
+\sin \left( \frac{\pi}{2} - 5i \right) = \sin \left( \frac{\pi}{2} \right) \cos (5i) -  \sin(5i) \cos \left( \frac{\pi}{2} \right)
+\]
+
+\[
+= \cos (5i) = \frac{e^{-5} + e^{5}}{2}
+\]
+Ответ: $\sin \left( \frac{\pi}{2} - 5i \right) = \frac{e^{-5} + e^{5}}{2}$
+
+\section{Представить в алгебраической форме: $\operatorname{arctg} \left( \frac{3\sqrt{3} - 8i}{7} \right)$}
+\subsection{Решение:}
+
+\[
+\operatorname{arc tg}(z) = w
+\]
+
+\[
+z = \frac{\sin w}{\cos w} = \frac{\frac{e^{iw} - e^{-iw}}{2i}}{\frac{e^{iw} + e^{-iw}}{2}} = \frac{e^{iw} - e^{-iw}}{i(e^{iw} + e^{-iw})}
+\]
+
+Умножим числитель и знаменатель на $2e^{iw}$:
+\[
+z = \frac{e^{2iw} - 1}{i(e^{2iw} + 1)} = i \frac{e^{2iw} - 1}{e^{2iw} + 1}
+\]
+
+Теперь выразим $e^{2iw}$:
+\[
+i z = \frac{e^{2iw} - 1}{e^{2iw} + 1}
+\]
+
+\[
+i z (e^{2iw} + 1) = e^{2iw} - 1
+\]
+
+\[
+e^{2iw} (1 - iz) = 1 + iz
+\]
+
+\[
+e^{2iw} = \frac{1 + iz}{1 - iz}
+\]
+
+Теперь найдём $w$:
+\[
+w = \frac{1}{2i} \text{Ln} \left( \frac{1 + iz}{1 - iz} \right) = \frac{1}{2i} \left(\ln \left( \frac{1 + iz}{1 - iz} \right) + \operatorname{Arg} \left( \frac{1 + iz}{1 - iz}\right) \right) = \frac{1}{2i} \ln(3) + \left(\frac{3n + 1}{3}\right)2\pi
+\]
+
+\[
+\left| \frac{1 + iz}{1 - iz} \right| = \left| \frac{1 + i \frac{3\sqrt{3} - 8i}{7}}{1 - i \frac{3\sqrt{3} - 8i}{7}} \right| = \left| \frac{\frac{7 + 3\sqrt{3}i + 8}{7}}{\frac{7 - 3\sqrt{3}i - 8}{7}} \right|
+\]
+
+\[
+= \left| \frac{15 + 3\sqrt{3}i}{-(1 + 3\sqrt{3}i)} \right| = \left|\frac{3}{2} -\frac{3\sqrt{3}}{2}i \right| = 3
+\]
+
+
+Ответ:
+$
+w = \frac{1}{2i} \ln{3} + \frac{3n + 1}{3}2\pi
+$
+
+\section{Представить в алгебраической форме: $(-3)^{2i}$}
+\subsection{Решение:}
+
+\[
+(-3)^{2i} = e^{2i \text{Ln}(-3)}
+\]
+
+\[
+= e^{2i (\ln 3 + i (\pi + 2\pi n))}
+\]
+
+\[
+ = e^{-2\pi (2n+1)} \left( \cos(2 \ln 3) + i \sin(2 \ln 3) \right)
+\]
+
+Ответ:
+$
+(-3)^{2i} = e^{-2\pi (2n+1)} \left( \cos(2 \ln 3) + i \sin(2 \ln 3) \right)
+$
+
+\section{Представить в алгебраической форме: $\text{Ln}(-1 + i)$}
+\subsection{Решение:}
+
+\[
+\text{Ln}(-1 + i) = \ln| -1 + i | + i \operatorname{Arg} (-1 + i) = \ln\sqrt{2} + i \left( \frac{4n + 3}{2} \pi \right)
+\]
+
+1) Найдем $\operatorname{Arg} (-1 + i)$:
+\[
+\operatorname{Arg} (-1 + i) = \operatorname{arg} (-1 + i) + 2\pi n = \frac{3\pi}{4} + 2\pi n = \left( \frac{4n + 3}{2} \pi \right)
+\]
+
+2) Найдем $| -1 + i |$:
+\[
+| -1 + i | = \sqrt{2}
+\]
+
+Ответ: $\frac{1}{2} \ln 2 + i \left( \frac{4n + 3}{2} \pi \right)$
+
+\section{Вычертить область, заданную неравенствами: $D = \{z : |z - i| \leq 1, 0 < \arg z < \frac{\pi}{4} \}$}
+\subsection{Ответ:}
+\begin{tikzpicture}
+    \draw[->] (-2, 0) -- (2, 0) node[right] {$\Re$};
+    \draw[->] (0, -2) -- (0, 2) node[above] {$\Im$};
+    \draw (0, 1) circle (1);
+    \fill[gray, opacity=0.5] (0,0) -- (1,1) arc (0:-90:1) -- cycle;
+    \draw[->] (0, 0) -- (45:1.4) node[right] {${\arg z}$};
+    \node at (0.7, 0.5) {$D$};
+\end{tikzpicture}
+
+\section{Определить вид пути и в случае, когда он проходит через точку $\infty$, исследовать его поведение в этой точке: $z = 3t \tg t + i4 \sec t$}
+\subsection{Решение:}
+
+Рассмотрим путь $z = 3t \tg t + i4 \sec t$.
+
+\[
+z = \frac{3\sin(t)}{\cos(t)} = \frac{4i}{\cos(t)}
+\]
+
+\[
+x = \frac{3\sin(t)}{\cos(t)}, y = \frac{4}{\cos(t)} 
+\]
+
+
+\[
+x^2 = \frac{9(1 - \cos^2(t))}{\cos^2{t}} = \frac{9}{\cos^2{t}} - 9, y^2 = \frac{16}{\cos^2(t)} \implies \frac{1}{\cos^2(t)} = \frac{y^2}{16}
+\]
+
+\[
+x^2 = \frac{9}{16}y^2 - 9 = \frac{9}{16}y^2 - x^2 = 9  \implies \frac{y^2}{\left(\frac{4}{3}\right)^2} - x^2 = 9
+\]
+
+\[
+ \frac{y^2}{4^2} - \frac{x^2}{3^2} = 1
+\]
+
+\[
+\left(\frac{y}{4} - \frac{x}{3}\right) \left(\frac{y}{4} + \frac{x}{3}\right) = 1
+\]
+
+\[
+\begin{cases}
+x = 3 \tg t \\
+y = \frac{4}{\cos t}
+\end{cases}
+\]
+
+Ответ:
+\begin{center}
+\begin{tikzpicture}
+
+    \draw[->] (-5, 0) -- (5, 0) node[right] {$x$};
+    \draw[->] (0, -5) -- (0, 5) node[above] {$y$};
+    \draw[thick, ->] plot[smooth, domain=0:4.5] (\x, {sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=0:2.5] (\x, {sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=0:4.5] (\x, {-sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=0:2.5] (\x, {-sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=-4.5:0] (\x, {sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=-4.5:-2.5] (\x, {sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=-4.5:0] (\x, {-sqrt((\x/3)^2 + 1) * 4});
+    \draw[thick, ->] plot[smooth, domain=-4.5:-2.5] (\x, {-sqrt((\x/3)^2 + 1) * 4});
+    \node at (0.1, 4.4) [right] {$t =0$};
+     \node at (-1, 3.8) [right] {$t = \pi $};
+     \node at (0.1, -4.6) [right] {$t =\frac{3\pi}{2}$};
+     \node at (-1.2, -3.8) [right] {$t = 2\pi $};
+    
+\end{tikzpicture}
+\end{center}
+
+\section{Восстановить голоморфную в окрестности точки $z_0$ функцию $f(z)$ по известной действительной части $u(x, y)$ или мнимой $v(x, y)$ и начальному значению $f(z_0)$: $v = x^2 - y^2 - x, \quad f(0) = 0$}
+\subsection{Решение:}
+
+Найдем производные $u$ и $v$:
+\[
+\frac{\partial v}{\partial x} = 2x - 1, \quad \frac{\partial v}{\partial y} = -2y
+\]
+\[
+\frac{\partial^2 v}{\partial x^2} = -2y, \quad \frac{\partial^2 v}{\partial y^2} = -2
+\]
+Отсюда следует, что \(\triangle u\) = 0
+
+\[
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}= -2y \implies u(x,y) = -2xy + \phi(y)
+\]
+
+\[
+\frac{\partial u}{\partial y} = - \frac{\partial u}{\partial x}  = 2x + 1 = -2x + \phi^{'}(y) 
+\]
+
+\[
+\phi^{'}(y) = 1, \quad \phi(y) = y + C
+\]
+
+
+\[
+f(z) = 2xy + y + C + i(x^2 - y^2 - x); \quad f(0) = C
+\]
+
+\[
+f(z) = i(x^2 - y^2) - 2xy + y - ix = iz^2 - iz = i(z^2 - z)
+\]
+
+\[
+z = x + iy
+\]
+
+\[
+z^2 = x^2 - y^2 + 2xyi
+\]
+
+
+\section{Вычислить интеграл от функции комплексной переменной по данному пути: $\int_{AB} (2z + 1) \, dz, \quad AB = \{z : y = x^3, z_A = 0, z_B = 1 + i\}$}
+\subsection{Решение:}
+\[
+\int_{AB} (2z + 1) \, dz = \int_{0}^{1+i} (2z + 1) \, dz
+\]
+
+Для наглядности изобразим путь на комплексной плоскости:
+\begin{tikzpicture}
+    \draw[->] (-0.5, 0) -- (2, 0) node[right] {$\Re$};
+    \draw[->] (0, -0.5) -- (0, 2) node[above] {$\Im$};
+    \draw[thick, ->] (0, 0) -- (1, 1);
+    \node at (1, 1) [above] {$z_B = 1 + i$};
+    \node at (0, 0) [below left] {$z_A = 0$};
+\end{tikzpicture}
+
+Теперь вычислим интеграл:
+\[
+\int_{0}^{1+i} (2z + 1) \, dz = \left[ z^2 + z \right]_{0}^{1+i} = (1+i)^2 + (1+i) - (0^2 + 0)
+\]
+
+\[
+= 3i + 1
+\]
+
+Ответ: $3i + 1$
+
+\section{Найти радиус сходимости степенного ряда: $\sum_{n=1}^{\infty} (1 + in^2) \cdot z^n$}
+\subsection{Решение:}
+
+Рассмотрим степенной ряд:
+\[
+\sum_{n=1}^{\infty} (1 + in^2) z^{n^2}
+\]
+
+Найдем коэффициенты $C_n$:
+\[
+C_n = 
+\begin{cases} 
+0, & n \neq k^2 \\
+(1 + ik^2), & n = k^2 
+\end{cases}
+\]
+
+Для нахождения радиуса сходимости используем формулу:
+\[
+R = \frac{1}{\rho}, \quad \rho = \overline{\lim_{n \to \infty}} \sqrt[n]{|C_n|}
+\]
+
+Так как $C_n = 0$ для $n \neq k^2$, рассмотрим только $n = k^2$:
+\[
+C_{n_k} = (1 + ik^2)
+\]
+
+Найдем $\sqrt[n_k]{|C_n|}$ для $n = k^2$:
+\[
+\sqrt[k^2]{|1 + ik^2|} \rightarrow 0
+\]
+
+\[
+R = \frac{1}{\rho} = 1
+\]
+
+\[
+|1 + ik^2| = \sqrt{1 + k^2}
+\]
+
+\[
+1 \leqslant \sqrt[k^2]{1 + k^2} \leqslant \sqrt[k^4]{k^4 + k^4} = \sqrt[k^2]{2} \cdot \sqrt[k^2]{k^4} \rightarrow 1
+\]
+
+Ответ: $R = 1 $
+
+
+\section{Данную функцию разложить в ряд Лорана в окрестности точки $z_0$: $f(z) = z \cos \frac{z}{z - 3}, \quad z_0 = 3$}
+\subsection{Решение:}
+
+\[
+\frac{z}{z-3} = 1 + \frac{3}{z-3}
+\]
+
+Тогда функция $f(z)$ примет вид:
+\[
+f(z) = \left((z - 3) + 3\right) \cos \left(1 + \frac{3}{z-3}\right)
+\]
+
+\[
+\cos \left(1 + \frac{3}{z-3}\right) = \cos 1 \cos \frac{3}{z-3} - \sin 1 \sin \frac{3}{z-3}
+\]
+
+Разложим $\cos$ и $\sin$ в ряд Тейлора:
+\[
+\cos \frac{3}{z-3} = \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n)!} \left(\frac{3}{z-3}\right)^{2n} =  \sum_{n=0}^{\infty} \frac{(-1)^n \cdot 9^n}{(2n)!} \left(\frac{1}{(z-3)^{2n}}\right) = \left|n = n'\right|
+\]
+
+\[
+= \sum_{-\infty}^{0} \frac{(-1)^n}{9^n \cdot (-2n)!} (z-3)^{2n}
+\]
+
+\[
+\sin \frac{3}{z-3} = \sum_{n=0}^{\infty} \frac{(-1)^n \left(\frac{3}{z-3}\right)^{2n+1}}{(2n+1)!} = \left|n = n'\right| = \sum_{-\infty}^{0} \frac{3 \cdot (-1)^n}{9^n \cdot (1 - 2n)!} (z-3)^{2n - 1}
+\]
+
+Тогда:
+\[
+f(z) = \left((z - 3) + 3\right) \left(\cos 1 \sum_{-\infty}^{0} \frac{(-1)^n}{9^n \cdot (-2n)!} (z-3)^{2n} - \sin 1 \sum_{-\infty}^{0} \frac{3 \cdot (-1)^n}{9^n \cdot (1 - 2n)!} (z-3)^{2n - 1}\right)
+\]
+
+\[
+ = 3 \left(\sum_{-\infty}^{0} \frac{(-1)^n \cdot \cos(1)}{9^n \cdot (-2n)!} (z-3)^{2n + 1} - \sum_{-\infty}^{0} \frac{3 \cdot (-1)^{n-1} \cdot \sin(1)}{9^n \cdot (1 - 2n)!} (z-3)^{2n}\right)
+\]
+
+\[
+z \cos\left(\frac{z}{z-3}\right) = 3\sum_{k =-\infty}^{\infty} C_k(z - 3)^k
+\]
+
+Итак, получили разложение:
+\[
+f(z) = \sum_{n=0}^{\infty} C_n (z-3)^n
+\]
+
+Где:
+\[
+C_k = 
+\begin{cases} 
+\frac{2(-1)^n \cos 1 \cdot 3^{2n}}{(2n)!}, & k = 2n, n \leqslant 0 \\ 
+\frac{-2(-1)^n \sin 1 \cdot 3^{2n+1}}{(2n+1)!}, & k = 2n+1, n \leqslant 0 \\ 
+0, & k \geqslant 2 
+\end{cases}
+\]
+
+\section{Определить тип особой точки $z = 0$ для данной функции: $f(z) = \frac{\sin 8z - 6z}{\cos z - 1 + z^2 / 2}$}
+\subsection{Решение:}
+
+\[
+f(z) = \frac{\sin 8z - 6z}{\cos z - 1 + \frac{z^2}{2}}
+\]
+
+Найдём предел при $z \to 0$:
+\[
+\lim_{z \to 0} \frac{\sin 8z - 6z}{\cos z - 1 + \frac{z^2}{2}} = \lim_{z \to 0} \frac{2z}{-\frac{z^6}{6!}} = \lim_{z \to 0} - \frac{2\cdot  6! \cdot z}{z^6} = - 2\cdot6! \lim_{z \to 0} \frac{1}{z^5} = \infty
+\]
+
+\[
+- 2\cdot6! \lim_{z \to 0} \frac{z^5}{z^5} \implies \text{Полюс 5-го порядка}
+\]
+
+Ответ: $\text{Полюс 5-го порядка}$
+
+
+\section{Для данной функции найти все изолированные особые точки и определить их тип: $f(z) = \frac{e^z - 1}{z^3 (z + 1)^2}$}
+\subsection{Решение:}
+
+Найдем изолированные особые точки:
+\[
+z_1 = 0, \quad z_2 = -1, \quad z_3 = \infty \text{ – С.О.Т.}
+\]
+
+1. Рассмотрим $z \to 0$:
+\[
+\lim_{z \to 0} \frac{e^z - 1}{z^3 (z + 1)^2} = \lim_{z \to 0} \frac{z}{z^3} = \lim_{z \to 0} \frac{1}{z^2} = \infty \implies \text{(полюс)}
+\]
+
+\[
+\lim_{z \to 0} \frac{z^k(e^z - 1)}{z^3 (z + 1)^2} = \lim_{z \to 0} \frac{z^k}{z^2} =
+\]
+
+Это выражение принимает следующие значения:
+
+\[
+\begin{cases}
+0, & k > 2 \\
+1, & k = 2  \implies \text{Полюс 2-го порядка}\\
+\infty, & k < 2
+\end{cases}
+\]
+
+2. Рассмотрим $z \to -1$:
+\[
+\lim_{z \to -1} \frac{e^z - 1}{z^3 (z + 1)^2} = \lim_{z \to -1} \frac{e^{-1} - 1}{-(z + 1)^2}  \implies \text{(полюс)}
+\]
+
+\[
+\lim_{z \to -1} \frac{(e^z - 1)(z + 1)^k}{z^3 (z + 1)^2} = \lim_{z \to -1} \frac{(e^z - 1)(z + 1)^k}{-(z + 1)^2}
+\]
+
+Это выражение принимает следующие значения:
+
+\[
+\begin{cases}
+0, & k > 2 \\
+1 - e^{-1}, & k = 2  \implies \text{Полюс 2-го порядка} \\
+\infty, & k < 2
+\end{cases}
+\]
+
+
+Ответ:
+$
+\text{Изолированные особые точки:} \quad 0, -1 \quad \text{(Полюсы 2-го порядка)}
+$
+
+\end{document}
