@@ -1,0 +1,413 @@
+\documentclass{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc} 
+\usepackage[english,russian]{babel} 
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{amsfonts}
+\usepackage{titlesec}
+\usepackage{titling} 
+\usepackage{geometry}
+\usepackage{pgfplots}
+\usepackage{esint}
+\pgfplotsset{compat=1.18}
+
+
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\arabic{section}}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{}{1em}{}
+
+
+\setlength{\droptitle}{-3em} 
+\title{\vspace{-1cm}ИДЗ №2}
+\author{Пелагеев Даниил Иванович}
+\date{Группа: Б9122-01.03.02мкт}
+
+\geometry{a4paper, margin=2cm}
+
+\begin{document}
+	
+\maketitle
+
+\section{Вычислить интеграл: $\oint_{|z - \frac{1}{2}| = 1} \frac{iz(z - i)}{\sin \pi z} \, dz$}
+\subsection{Решение:}
+
+\[
+\sin (\pi z) = 0 \Rightarrow z = n
+\]
+
+
+\begin{tikzpicture}
+    % Draw the axes
+    \draw[thick,->] (-1,0) -- (2,0) node[anchor=north west] {x};
+    \draw[thick,->] (0,-1) -- (0,2) node[anchor=south east] {y};
+    
+    % Draw the dashed circle
+    \draw[dashed] (0.5,0) circle (1);
+    
+    
+    % Labels for the axes
+    \fill (1,0) circle (2pt) node[anchor=north] at (1,0) {1};
+    \fill (0.5,0) circle (1pt) node[anchor=north] at (0.5,0) {$\frac{1}{2}$};
+    \fill (0,1) circle (2pt) node[anchor=east] at (0,1) {1};
+    \fill (1.5, 0) circle (2pt) node[anchor= north ] at (1.5, 0) {1$\frac{1}{2}$};
+\end{tikzpicture}
+
+1) При $z = 0$:
+
+\[
+(z (z - i))'= 2z - i \Bigg|_{z=0} = -i
+\]
+
+\[
+\left( \sin (\pi z) \right)' = \pi \cos (\pi z) \Bigg|_{z=0} = \pi
+\]
+
+\[
+z = 0 \text{ – У.O.Т}
+\]
+
+2) При $z = 1$:
+
+\[
+i z (z - i) \Bigg|_{z=1} = i (1 - i) = 1 + i
+\]
+
+\[
+\left( \sin (\pi z) \right)' = \pi \cos (\pi z) \Bigg|_{z=1} = -\pi
+\]
+
+\[
+z = 1 \text{ – Полюс 1-го порядка}
+\]
+
+\[
+\oint_{\lvert z - \frac{1}{2} \rvert = 1} \frac{i z (z - i)}{\sin (\pi z)} dz = 2 \pi i \left(- \frac{1 + i}{\pi} \right) = -2 i (1 + i) = 2 - 2i
+\]
+
+Ответ: 
+$
+\oint_{\lvert z - \frac{1}{2} \rvert = 1} \frac{i z (z - i)}{\sin (\pi z)} dz = 2 - 2i
+$
+
+\section{Вычислить интеграл: $\oint_{|z| = 1} \frac{3z^4 - 2z^3 + 5}{z^4} \, dz$}
+\subsection{Решение:}
+
+\[
+f(z) = 3 - \frac{2}{z} + \frac{5}{z^4}
+\]
+
+\[
+z = 0 \text{ – Особая точка}
+\]
+
+\[
+\text{Res}_{z=0} f(z)= \frac{1}{6} \lim_{z \to 0} \frac{d^3}{dz^3} \left[ f(z) z^4 \right] = \frac{1}{6} \lim_{z \to 0} \frac{d^3}{dz^3} \left( 3z^4 - 2z^3 + 5 \right)
+\]
+
+\[
+= - \frac{12}{6}  = - 2 
+\]
+
+\[
+\oint_{|z|=1} \frac{3z^4 - 2z^3 + 5}{z^4} dz = 2 \pi i \cdot (- 2) =- 4 \pi i
+\]
+
+
+Ответ: $ - 4 \pi i $
+
+
+\section{Вычислить интеграл: $\oint_{|z| = 0.5} \frac{e^{6z} - \cos 8z}{z \, \sh 4z} \, dz$}
+\subsection{Решение:}
+
+\[
+\oint_{|z|=\frac{1}{2}} \frac{e^{6z} - \cos(8z)}{z \sinh(4z)} \, dz = 2 \pi i \, \text{Res}(f(z))
+\]
+
+\[
+g(z) = e^{6z} - \cos(8z)
+\]
+
+\[
+n(z) = z \sh(4z)
+\]
+
+\[
+\text{Res}(f(z)) = \lim_{z \to 0} f(z)=  \lim_{z \to 0} \frac{e^{6z} - \cos(8z)}{\sh(4z)} = \lim_{z \to 0} \frac{6 e^{6z} - 8 \sin(8z)}{4 \ch(4z)}
+\]
+
+\[
+= \frac{6}{4} = \frac{3}{2}
+\]
+
+\[
+\oint_{|z|=\frac{1}{2}} \frac{e^{6z} - \cos(8z)}{z \sh(4z)} \, dz = 2 \pi i \cdot \frac{3}{2} = 3 \pi i
+\]
+
+
+Ответ: $3 \pi i $
+
+
+\section{Вычислить интеграл: $\oint_{|z - 4| = 2} \left( z \sh \frac{1}{z - 4} + \frac{2 \sin \frac{\pi z}{6}}{(z - 3)(z - 1)} \right) dz$}
+\subsection{Решение:}
+
+1. 
+\[
+1. \oint_{|z - 4| = 2} z \sh \frac{1}{z - 4} dz = 2\pi i \cdot \text{Res}_{z=4}\left( z \frac{1}{z-4} \right) = 2\pi i \cdot 4 = 8\pi i
+\]
+
+\[
+\sh z = z + \frac{z^3}{3!} + \frac{z^5}{5!} + ...
+\]
+
+\[
+z = 4 \text{ – С.О.Т}
+\]
+
+\[
+z\sh(\frac{1}{z-4}) = \left(4 + (z-4)\right) \cdot \left(\frac{1}{z-4} + \frac{1}{3!}  \frac{1}{(z-4)^3} + ... \right)
+\]
+
+\[
+C_{-1}= 4
+\]
+
+
+\[
+2.  \oint_{|z|=2} \frac{2 \sin (\frac{\pi z}{6})}{(z-3)^2(z-1)} dz = 2\pi i \cdot \text{Res}_{z = 3} \left( \frac{2 \sin (\frac{\pi z}{6})}{(z-3)^2(z-1)} \right) = 2 \pi i \lim_{z \to 3} \left(\frac{2 \sin(\frac{\pi z}{6})}{(z-1)} \right)'
+\]
+
+\[
+\lim_{z \to 3} \frac{2 \sin(\frac{\pi z}{6})}{(z-3)^2(z-1)}  = \lim_{z \to 3} \frac{1}{(z-3)^2} = \infty
+\]
+
+\[
+\lim_{z \to 3} \frac{2 \sin(\frac{\pi z}{6})(z-3)^k}{(z-3)^2(z-1)}  = \lim_{z \to 3} \frac{(z-3)^k}{(z-3)^2} = 
+\]
+
+\[
+= \begin{cases} k > 2 ; \quad\quad 0\\
+ k = 2 ; \quad\quad 1\rightarrow z_0 = 3 \text{Полюс 2-го порядка} \\ 
+  k < 2 ; \quad\quad \infty\\
+\end{cases}
+\]
+
+\[
+\oint_{|z|=2} \frac{2 \sh (\frac{\pi z}{6})}{(z-3)^2(z-1)} dz = 2 \pi i \cdot 2 \frac{\cos (\frac{\pi z}{6}) \cdot \frac{\pi}{6} \cdot (z-1) \cdot \sin (\frac{\pi z}{6})}{(z-1)^2} \Bigg|_{z=3} = -\pi i
+\]
+
+\[
+\oint_{|z - 4| = 2} \left( z \sh \frac{1}{z - 4} + \frac{2 \sin \frac{\pi z}{6}}{(z - 3)(z - 1)} \right) dz = 8\pi i + (-\pi i) = 7 \pi i
+\]
+
+Ответ: $7 \pi i$
+
+\section{Вычислить интеграл: $\int_{0}^{2\pi} \frac{dt}{2\sqrt{2} \sin t + 3}$}
+\subsection{Решение:}
+
+\[
+int_{0}^{2\pi} \frac{dt}{2\sqrt{2} \sin t + 3} = \left|\sin(t) = \frac{1}{2i}(z-\frac{1}{z}), \quad dt = \frac{dz}{di}\right| = \oint_{|z|=1} \frac{dz}{\sqrt{2}(z^2 - 1) + 3iz} = \oint_{|z|=1} \frac{dz}{\sqrt{2}(z + i\sqrt{2}) + (z + \frac{i}{\sqrt{2}})}
+\]
+
+\[
+\text{Особые точки: } z = \frac{i}{\sqrt{2}} \text{ -- не сходится}, \quad z = \frac{1}{\sqrt{2}} \text{ -- простой полюс}
+\]
+
+\[
+\text{Res}_{z = \frac{i}{\sqrt{2}} } =  \left( f(z) \right) =\lim_{z \to \frac{i}{\sqrt{2}}}\left[f(z)\left(z - \frac{i}{\sqrt{2}}\right)\right] = \lim_{z \to \frac{i}{\sqrt{2}}} \frac{1}{\sqrt{2} (z + i \sqrt{2})} = \frac{1}{\sqrt{2}\left(\frac{i}{\sqrt{2}} + i\sqrt{2}\right)} = -i
+\]
+
+\[
+\int_{0}^{2\pi} \frac{dt}{2\sqrt{2} \sin t + 3} = 2\pi i \cdot (-i) = 2\pi
+\]
+
+Ответ:  $2\pi$
+
+\section{Вычислить интеграл: $\int_{0}^{2\pi} \frac{dt}{(3 + \cos t)^2}$}
+\subsection{Решение:}
+
+\section{Вычислить интеграл: $\int_{-\infty}^{+\infty} \frac{x^2 - x + 2}{x^4 + 10x^2 + 9} \, dx$}
+\subsection{Решение:}
+\[
+\int_{-\infty}^{+\infty} \frac{x^2 - x + 2}{x^4 + 10x^2 + 9} \, dx = \oint \frac{z^2 - z + 2}{(z^2 + 9)(z^2 + 1)} \, dz
+\]
+
+Особые точки:
+\[
+z = 3i \quad (\Im z > 0) \quad \text{проходит}
+\]
+\[
+z = -i \quad (\Im z \geq 0) \quad \text{не проходит}
+\]
+\[
+z = -3i \quad (\Im z < 0) \quad \text{не проходит}
+\]
+\[
+z = i \quad (\Im z \leq 0) \quad \text{проходит}
+\]
+
+
+\[
+1. \text{Res}_{z = 3i}(f(z)) = \lim_{z \to 3i}\left[f(z)\left(z - 3i\right)\right] = \lim_{z \to 3i} \frac{z^2 - z + 2}{(z + 3i)(z^2 + 1)} = \frac{3 - 7i}{48} 
+\]
+\[
+2. \text{Res}_{z = i}(f(z)) =  \lim_{z \to i}\left[f(z)\left(z - i\right)\right] =\lim_{z \to i} \frac{z^2 - z + 2}{(z + 9)(z^2 + 1)}  = \frac{-i - 1}{16}
+\]
+
+\[
+\int_{-\infty}^{+\infty} \frac{x^2 - x + 2}{x^4 + 10x^2 + 9} \, dx = 2\pi i \left( \frac{3 - 7i}{48}  + \frac{-i - 1}{16} \right) = 2\pi i(\frac{10}{48i}) = \frac{5\pi}{12}
+\]
+
+Ответ: $\frac{5\pi}{12}$
+
+
+\section{Вычислить интеграл: $\int_{-\infty}^{+\infty} \frac{(x^3 - 2) \cos \frac{x}{2}}{(x^2 + 1)^2} \, dx$}
+\subsection{Решение:}
+
+\section{Найти оригинал по заданному изображению: $\frac{1}{p^3 (p^2 - 4)}$}
+\subsection{Решение:}
+
+\[
+\frac{1}{p^3 (p^2 - 4)} = \frac{A}{p} + \frac{B}{p^2} + \frac{C}{p^3} + \frac{Dp + E}{p^2 - 4}
+\]
+
+\[
+= \frac{A^{(p^2(p^2-4)}}{p} + \frac{B^{(p(p^2-4)}}{p^2} + \frac{C^{(p^2-4}}{p^3} + \frac{(Dp + E)^{(p^3}}{p^2 - 4}
+\]
+
+\[
+\begin{cases}
+    p^3: & A + D = 0 \\
+    p^2: & B + E = 0 \\
+    p: & -4A + C = 0 \\
+    1: & -4B = 0
+\end{cases}
+\]
+
+\[
+\begin{cases}
+    B = E = 0 \\
+    5C = -1 \\
+    C = -\frac{1}{5} \\
+    A = - \frac{4}{5} \\
+    D = \frac{4}{5}
+\end{cases}
+\]
+
+\[
+= -\frac{4}{5} \cdot \frac{1}{p} - \frac{1}{5} \cdot \frac{1}{p^2} + \frac{4}{5} + \frac{1}{5} \cdot \frac{4p}{p^2 - 4}
+\]
+
+\[
+= -\frac{4}{5} - \frac{1}{10} t^2 + \frac{4}{5} \ch (2t)
+\]
+
+
+
+Ответ:
+$
+\frac{1}{p^3 (p^2 - 4)}  = -\frac{4}{5} - \frac{1}{10} t^2 + \frac{4}{5} \ch (2t)
+$
+
+\section{Найти решения дифференциального уравнения, удовлетворяющее условиям $y'' - 4y = \th^2 2t$}
+\subsection{Решение:}
+
+\section{Операционным методом решить задачу Коши $y'' + y' + y = 7e^{2t}$, $y(0) = 3$, $y'(0) = 1$}
+\subsection{Решение:}
+
+\[
+p^2 \bar{y} - p - 4 + p \bar{y} - 1 + \bar{y} = \frac{7}{p-2}
+\]
+
+\[
+(p^2 + p + 1) \bar{y} - p - 5 = \frac{7}{p-2} + p + 5
+\]
+
+\[
+\bar{y} = \frac{7}{(p-2)(p^2 + p + 1)} + \frac{p + 5}{p^2 + p + 1} = \frac{p^2 + 3p - 3}{(p-2)(p^2 + p + 1)}
+\]
+
+\[
+= \frac{1}{p-2} + \frac{2}{p^2 + p + 1}
+\]
+
+\[
+\bar{y} = \frac{1}{p-2} + \frac{4}{\sqrt{3}} \cdot \frac{\frac{\sqrt{3}}{2}}{\left(p + \frac{1}{2}\right)^2 + \frac{3}{4}} \to y(t) = e^{2t} + \frac{4}{\sqrt{3}} e^{-\frac{t}{2}} \sin\left(\frac{\sqrt{3}}{2}\right)t
+\]
+
+Ответ:
+$
+y(t) = e^{2t} + \frac{4}{\sqrt{3}} e^{-\frac{t}{2}} \sin\left(\frac{\sqrt{3}}{2}\right)t
+$
+
+\section{Найти решение системы дифференциальных уравнений, удовлетворяющее заданному начальному условию: }
+\[
+\begin{cases} x' = 2y \quad\quad x(0) = 2\\
+y' = 2x + 3y + 1 \quad\quad y(0) = 1
+\end{cases}
+\]
+\subsection{Решение:}
+
+\[
+\begin{cases}
+pX(p) - x(0) = 2Y(p) \\
+pY(p) - y(0) = 2X(p) + 3Y(p) + \frac{1}{p}
+\end{cases}
+\]
+
+\[
+\begin{cases}
+pX(p) - 2 = 2Y(p) \\
+pY(p) - 1 = 2X(p) + 3Y(p) + \frac{1}{p}
+\end{cases}
+\]
+
+\[
+pY(p) - 1 = 2X(p) + 3Y(p) + \frac{1}{p} \Rightarrow X(p) = \frac{pY(p) - 1 - 3Y(p) - \frac{1}{p}}{2}
+\]
+
+\[
+p\frac{pY(p) - 1 - 3Y(p) - \frac{1}{p}}{2} - 2 = 2Y(p) \Rightarrow Y(p) = \frac{p + 5}{p^2 - 3p - 4}
+\]
+
+\[
+Y(p) = \frac{p + 5}{p^2 - 3p - 4} = \frac{p + 5}{(p - \frac{3}{2})^2 - 4}
+\]
+
+\[
+= \frac{5}{3} \frac{p - 1}{(p - 1)^2 - 4} = \frac{i}{3} \frac{2i}{(p - 1)^2 - 4} - \frac{2}{3p} \Rightarrow
+\]
+
+\[
+\Rightarrow y(t) = \frac{5}{3}e^t \cos(2it) + \frac{i}{3}e^t \sin(2it) - \frac{2}{3} = \frac{5}{3} e^t \ch(2t) - \frac{1}{3} e^t\sh(2t) - \frac{2}{3}
+\]
+
+\[
+y' = 2x+3y +1 \Rightarrow x(t) = \frac{1}{2}[y' - 3y - 1]
+\]
+
+\[
+= \frac{1}{2}(e^2\ch(2t) + 3 e^t\sh(2t) - 5e^2\ch(2t) + e^t\sh(2t) + 2 -1)
+\]
+
+\[
+= 2e^t\sh(2t) - 2e^t\ch(2t) + \frac{1}{2}
+\]
+
+
+
+Ответ:
+
+\[
+\begin{cases}
+x(t) = 2 e^t\sh(2t) - 2 e^t \ch(2t)+ \frac{1}{2} \\
+y(t) = \frac{5}{3} e^t \ch(2t) - \frac{1}{3} e^t\sh(2t) - \frac{2}{3}
+\end{cases}
+\]
+
+
+\end{document}
