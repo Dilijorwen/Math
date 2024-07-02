@@ -1,0 +1,40 @@
+\documentclass{article}
+
+% Кодировки и языковые пакеты
+\usepackage[T2A]{fontenc}  % Поддержка кириллического шрифта
+\usepackage[utf8]{inputenc}  % Кодировка UTF-8 для ввода
+\usepackage[russian]{babel}  % Поддержка русского языка
+
+% Настройка абзацев и отступов
+\usepackage{indentfirst}  % Отступ первого абзаца в разделе
+\usepackage{parskip}  % Управление интервалами между абзацами
+\setlength{\parindent}{1.25em}  % Отступ абзаца
+\setlength{\parskip}{0em}  % Отступ между абзацами
+
+% Для создания таблиц и их форматирования
+\usepackage{tabularx}  % Автоматическая регулировка ширины колонок
+%\usepackage{geometry}  % Установка полей документа
+%\geometry{left=30mm, top=20mm, right=15mm, bottom=20mm}  % Установка полей документа
+
+% Работа с вербатимными окружениями и гиперссылками
+\usepackage{fancyvrb}  % Расширенные возможности для вербатимного текста
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black, linktoc=all]{hyperref}  % Создание гиперссылок в документе
+\usepackage{comment}
+
+% Форматирование заголовков и секций
+%\usepackage{titlesec}  % Настройка стиля заголовков разделов
+%\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}  % Формат заголовков разделов
+
+% Для добавления  и математики
+\usepackage{amsmath}  % Дополнительные математические символы и окружения
+\usepackage{amssymb} % Для использования \blacksquare
+
+% Для создания графиков и визуализации данных
+\usepackage{pgfplots}  % Построение графиков
+
+% Библиография
+\usepackage[style=numeric,sorting=nyt]{biblatex} % Создание библиографии
+\addbibresource{book.bib}  % Указание файла с библиографией
+\usepackage{tocbibind}% Пакет для автоматического добавления библиографии в содержание с нумерацией
+
+\usepackage[strings]{underscore} % Позволяет спокойно юзать "_"
